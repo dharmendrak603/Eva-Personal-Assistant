@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Assistant</h1>
+        <form action="/get" method="post">
+            <input type="text" name="message" placeholder="Enter your message" required>
+            <button type="submit">Send</button>
+        </form>
+        <div class="response">
+            <h2>Response:</h2>
+            <p id="response-text"></p>
+        </div>
+    </div>
+
+    <script>
+        // Submit form via AJAX to avoid page reload
+        const form = document.querySelector('form');
+        const responseText = document.getElementById('response-text');
+        
+        form.onsubmit = async (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData(form);
+            const message = formData.get("message");
+
+            const res = await fetch('/get', {
+                method: 'POST',
+                body: new URLSearchParams({ 'message': message }),
+            });
+
+            const response = await res.text();
+            responseText.innerText = response;
+        };
+    </script>
+</body>
+</html>

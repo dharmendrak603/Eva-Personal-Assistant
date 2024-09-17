@@ -1,0 +1,193 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Good morning",
+        "Good evening",
+        "How are you?",
+        "What's up?"
+      ],
+      "responses": [
+        "Hello! How can I assist you today?",
+        "Hi there! What can I do for you?",
+        "Hey! How can I help you today?",
+        "Good to see you! How can I assist you?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "Take care",
+        "Have a great day",
+        "Catch you later"
+      ],
+      "responses": [
+        "Goodbye! Have a wonderful day!",
+        "See you next time!",
+        "Take care! If you need anything, just ask.",
+        "Bye! Feel free to reach out anytime."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "thank_you",
+      "patterns": [
+        "Thank you",
+        "Thanks",
+        "I appreciate it",
+        "You're a lifesaver",
+        "Thanks for your help"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Happy to help!",
+        "No problem at all!",
+        "Glad I could assist!"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "reminders",
+      "patterns": [
+        "Remind me to",
+        "Set a reminder for",
+        "I need a reminder for",
+        "Don't forget to",
+        "Can you remind me about"
+      ],
+      "responses": [
+        "Sure, I'll set a reminder for you.",
+        "Got it! I'll remind you about that.",
+        "Reminder set!",
+        "I'll make sure to remind you."
+      ],
+      "context": ["reminder"]
+    },
+    {
+      "tag": "calendar",
+      "patterns": [
+        "What's on my calendar?",
+        "Show me my schedule",
+        "What are my appointments today?",
+        "Add an event to my calendar",
+        "Update my schedule"
+      ],
+      "responses": [
+        "Here are your upcoming events.",
+        "Let me show you your schedule.",
+        "I’ll add the event to your calendar.",
+        "Updating your calendar now."
+      ],
+      "context": ["calendar_query"]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "What's the weather like today?",
+        "Do I need an umbrella?",
+        "How's the weather outside?",
+        "What's the forecast for today?",
+        "Is it sunny or rainy?"
+      ],
+      "responses": [
+        "I can check the weather for you. Please provide your location.",
+        "Let me get the weather details for your area.",
+        "I'll need to know your location to provide the weather update."
+      ],
+      "context": ["weather_query"]
+    },
+    {
+      "tag": "jokes",
+      "patterns": [
+        "Tell me a joke",
+        "Make me laugh",
+        "I need a joke",
+        "Share a funny story",
+        "Tell me something humorous"
+      ],
+      "responses": [
+        "Why don't skeletons fight each other? They don't have the guts.",
+        "Why did the math book look sad? Because it had too many problems.",
+        "What do you call cheese that isn't yours? Nacho cheese!",
+        "Why don't scientists trust atoms? Because they make up everything!"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "to_do_list",
+      "patterns": [
+        "Add to my to-do list",
+        "What’s on my to-do list?",
+        "Remove from my to-do list",
+        "Show me my tasks",
+        "Update my to-do list"
+      ],
+      "responses": [
+        "I've added that to your to-do list.",
+        "Here are your current tasks.",
+        "I’ll update your to-do list now.",
+        "Removing that from your to-do list."
+      ],
+      "context": ["to_do_list_query"]
+    },
+    {
+      "tag": "follow_up",
+      "patterns": [
+        "Follow up on",
+        "Check the status of",
+        "What’s the update on",
+        "Remind me to follow up",
+        "Any updates on"
+      ],
+      "responses": [
+        "I'll check the status and get back to you.",
+        "Following up on that request now.",
+        "Let me provide you with an update.",
+        "I'll remind you to follow up."
+      ],
+      "context": ["follow_up_query"]
+    },
+    {
+      "tag": "news",
+      "patterns": [
+        "What's the latest news?",
+        "Tell me the news",
+        "Any current news updates?",
+        "What's happening today?",
+        "Give me today's headlines"
+      ],
+      "responses": [
+        "Here's the latest news update.",
+        "Let me get the news for you.",
+        "I’ll fetch the latest headlines.",
+        "Here are today's top stories."
+      ],
+      "context": ["news_query"]
+    },
+    {
+      "tag": "tasks",
+      "patterns": [
+        "What tasks do I have today?",
+        "Show me my tasks",
+        "List my tasks for today",
+        "What are my current tasks?",
+        "Update my task list"
+      ],
+      "responses": [
+        "Here are your tasks for today.",
+        "I’ll update your task list.",
+        "Listing your current tasks now.",
+        "Let me show you what’s on your task list."
+      ],
+      "context": ["tasks_query"]
+    }
+  ]
+}
