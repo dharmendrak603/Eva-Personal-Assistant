@@ -116,7 +116,7 @@ def chatbot_response(msg):
         set_reminder(task, reminder_time)
     else:
         print(response)
-
+print("bye")
 
 # Main loop to take user input and respond
 while True:
